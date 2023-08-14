@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distance Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    onload="document.getElementById('page').hidden = false; document.getElementById('loading').hidden = true;"
+  >
+    <div id="loading">
+      <h2>Loading...</h2>
+      <p>The page is loading. Please be patient.</p>
+    </div>
+
+    <div class="page" id="page" hidden>
+      <div class="line1">
+        <input type="number" id="value" value="1" />
+        <p>&nbsp;</p>
+        <select name="unitI" id="unitI">
+          <option value="nm">nm</option>
+          <option value="mm">mm</option>
+          <option value="cm">cm</option>
+          <option value="m">m</option>
+          <option value="km">km</option>
+        </select>
+        <p>to</p>
+        <select name="unitO" id="unitO">
+          <option value="nm">nm</option>
+          <option value="mm">mm</option>
+          <option value="cm">cm</option>
+          <option value="m">m</option>
+          <option value="km">km</option>
+        </select>
+      </div>
+      <button id="convertBtn">Convert</button>
+      <p id="answer">=</p>
+    </div>
+
+    <div class="credits">
+      <p>Jedi made this :)</p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

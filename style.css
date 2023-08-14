@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+}
+
+.page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line1 * {
+  display: inline;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  background-color: #00aa00;
+  padding: 14px 16px;
+  color: white;
+  transition: 0.2s;
+}
+
+select {
+  border: none;
+  border-radius: 5px;
+  background-color: #0000ff50;
+  padding: 6px 10px;
+  transition: 0.2s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  border-radius: 5px;
+}
+
+input[type='number'] {
+  appearance: textfield;
+}
+
+button:hover,
+select:hover {
+  opacity: 0.8;
+}
+
+.credits p {
+  position: fixed;
+  color: #00000070;
+  left: 50%;
+  bottom: 3px;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+}
